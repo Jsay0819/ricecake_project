@@ -1,7 +1,7 @@
 // 퀴즈 이벤트
 window.addEventListener("load", function () {
   const quizMultiBoxes = document.querySelectorAll(".quiz_multi .box");
-  const quizAnswerBoxes = document.querySelectorAll(".quiz_answer .box");
+  const quizAnswerBoxes = document.querySelectorAll(".quiz_answer .box span");
   const checkAnswerButton = document.querySelector(".quiz_btn");
 
   let currentIndex = 0;
@@ -24,7 +24,6 @@ window.addEventListener("load", function () {
 
     if (userAnswer === expectedAnswer) {
       alert("정답입니다! 쿠폰이 발급되었습니다. ");
-
     } else {
       alert("틀렸습니다. 다시 시도하세요.");
 

@@ -74,10 +74,22 @@
   border-radius: 20%;
   box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.3);
   width: 5.2083vw;
-  height: 5.2083vw;
-  padding: 2%;
+  /* height: 5.2083vw; */
   font-size: 3.5vw;
   margin: 0 1%;
+  text-align: center;
+  position: relative;
+}
+.quiz_answer li span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quiz_answer li::after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
 }
 /* 정답 확인하기 */
 .quiz_btn {
@@ -107,97 +119,4 @@
 .sp_color {
   font-weight: 900;
   color: #e5606a;
-}
-/* 반응형 */
-
-@media all and (max-width: 1300px) {
-  .quiz_multi li {
-    font-size: 2.9vw;
-  }
-  .quiz_answer li {
-    font-size: 3.4vw;
-  }
-}
-@media all and (max-width: 1080px) {
-  /* 퀴즈 보기 */
-  .quiz_multi li {
-    font-size: 2.8vw;
-  }
-  /* 퀴즈 정답 물음표 */
-  .quiz_answer li {
-    font-size: 3.2vw;
-  }
-}
-@media all and (max-width: 990px) {
-  /* 퀴즈 보기 */
-  .quiz_multi {
-    margin-top: 6%;
-  }
-  .quiz_answer li {
-    font-size: 3.1vw;
-    margin: 0 0.9%;
-  }
-}
-@media all and (max-width: 890px) {
-  /* 퀴즈 보기 */
-  .quiz_multi {
-    margin-top: 6%;
-  }
-  .quiz_multi li {
-    font-size: 2.7vw;
-  }
-  /* 퀴즈 정답 물음표 */
-  .quiz_answer {
-    font-weight: 900;
-    margin-top: 7%;
-  }
-  .quiz_answer li {
-    font-size: 2.9vw;
-  }
-
-  @media all and (max-width: 690px) {
-    /* 퀴즈 */
-    .quiz {
-      font-size: 1.4vw;
-    }
-    /* 퀴즈 보기 */
-    .quiz_multi {
-      font-weight: 900;
-      margin-top: 6%;
-    }
-    .quiz_multi li {
-      font-size: 2.6vw;
-      margin: 0 0.9%;
-    }
-    /* 퀴즈 정답 물음표 */
-    .quiz_answer {
-      font-weight: 600;
-      margin-top: 7%;
-    }
-    .quiz_answer li {
-      font-size: 2.8vw;
-    }
-  }
-  @media all and (max-width: 480px) {
-    /* 퀴즈 보기 */
-    .quiz_multi {
-      font-weight: 900;
-      margin-top: 6%;
-    }
-    .quiz_multi li {
-      border-radius: 20%;
-      padding: 4% 2%;
-      font-size: 2.5vw;
-      margin: 0 0.8%;
-    }
-    /* 퀴즈 정답 물음표 */
-    .quiz_answer {
-      font-weight: 600;
-      margin-top: 7%;
-    }
-    .quiz_answer li {
-      font-size: 2.7vw;
-      margin: 0 0.8%;
-    }
-  }
 }
