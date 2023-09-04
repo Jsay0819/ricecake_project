@@ -73,11 +73,12 @@
   color: #fff;
   border-radius: 20%;
   box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.3);
-  padding: 3% 2%;
+  width: 5.2083vw;
+  height: 5.2083vw;
+  padding: 2%;
   font-size: 3.5vw;
   margin: 0 1%;
 }
-
 /* 정답 확인하기 */
 .quiz_btn {
   width: 40%;
@@ -107,8 +108,8 @@
   font-weight: 900;
   color: #e5606a;
 }
-
 /* 반응형 */
+
 @media all and (max-width: 1300px) {
   .quiz_multi li {
     font-size: 2.9vw;
@@ -132,9 +133,6 @@
   .quiz_multi {
     margin-top: 6%;
   }
-  .quiz_multi li {
-    font-size: 2.8vw;
-  }
   .quiz_answer li {
     font-size: 3.1vw;
     margin: 0 0.9%;
@@ -146,7 +144,7 @@
     margin-top: 6%;
   }
   .quiz_multi li {
-    font-size: 3vw;
+    font-size: 2.7vw;
   }
   /* 퀴즈 정답 물음표 */
   .quiz_answer {
@@ -154,7 +152,6 @@
     margin-top: 7%;
   }
   .quiz_answer li {
-    padding: 3% 2%;
     font-size: 2.9vw;
   }
 
@@ -169,7 +166,6 @@
       margin-top: 6%;
     }
     .quiz_multi li {
-      padding: 4% 2%;
       font-size: 2.6vw;
       margin: 0 0.9%;
     }
@@ -179,9 +175,7 @@
       margin-top: 7%;
     }
     .quiz_answer li {
-      padding: 3% 2%;
       font-size: 2.8vw;
-      margin: 0 0.9%;
     }
   }
   @media all and (max-width: 480px) {
@@ -193,7 +187,7 @@
     .quiz_multi li {
       border-radius: 20%;
       padding: 4% 2%;
-      font-size: 2.6vw;
+      font-size: 2.5vw;
       margin: 0 0.8%;
     }
     /* 퀴즈 정답 물음표 */
@@ -202,7 +196,6 @@
       margin-top: 7%;
     }
     .quiz_answer li {
-      padding: 3% 2%;
       font-size: 2.7vw;
       margin: 0 0.8%;
     }

@@ -17,13 +17,12 @@
   stroke: #ffec76;
   stroke-width: 16;
   stroke-miterlimit: 10;
-
 }
 /* 개요 */
 .info_inner {
   color: #fff;
   position: relative;
- margin: 0 auto;
+  margin: 0 auto;
 }
 .info_inner ul {
   position: absolute;
@@ -38,4 +37,13 @@
 }
 .info_inner p {
   background-color: #ffec76;
+}
+
+/*  */
+.infoimg img {
+  width: 20vw;
+}
+.infoimg ul {
+  display: flex;
+  justify-content: space-around;
 }
