@@ -412,7 +412,7 @@
 
       <!-- 브랜드 장점 -->
       <section class="brandinfo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1083">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1083">
           <path
             class="line"
             d="M16-0.5v659.22c0,0,5,75.14,83,90.17h1376c0,0,95-6.01,106,95.18v239.44"
@@ -445,7 +445,8 @@
               </p>
             </li>
           </ul>
-        </div>
+        </div> -->
+        <img src="images/brand_info.svg" alt="떡기의하루개요" />
       </section>
 
       <!-- 나에게 맞는 떡케이크 찾기 -->
@@ -514,7 +515,7 @@
                 <h1>
                   떡끼의 하루는 전국 떡 프랜차이즈 중에서 <br />
                   <span class="sp_first"
-                    >2003년 <span class="sp_color">가장 먼저</span> 출시한 
+                    >2003년 <span class="sp_color">가장 먼저</span> 출시한
                     <i class="fa-regular fa-square"></i>
                     <i class="fa-regular fa-square"></i>
                     <i class="fa-regular fa-square"></i>
@@ -525,14 +526,21 @@
                   물음표에 들어갈 말은 무엇일까요?
                 </h1>
                 <ul class="quiz_multi">
-                  <li>내</li>
-                  <li>초</li>
-                  <li>해</li>
-                  <li>최</li>
-                  <li>외</li>
-                  <li>공</li>
-                  <li>국</li>
+                  <li class="box" onclick="fillBox('내')">내</li>
+                  <li class="box" onclick="fillBox('초')">초</li>
+                  <li class="box" onclick="fillBox('해')">해</li>
+                  <li class="box" onclick="fillBox('최')">최</li>
+                  <li class="box" onclick="fillBox('외')">외</li>
+                  <li class="box" onclick="fillBox('공')">공</li>
+                  <li class="box" onclick="fillBox('국')">국</li>
                 </ul>
+                <ul class="quiz_answer">
+                  <li class="box" id="box1">?</li>
+                  <li class="box" id="box2">?</li>
+                  <li class="box" id="box3">?</li>
+                  <li class="box" id="box4">?</li>
+                </ul>
+                <div class="quiz_btn">정답 확인하기</div>
               </div>
             </div>
             <div class="quiz_info">
